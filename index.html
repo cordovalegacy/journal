@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Journal</title>
+</head>
+<body>
+    <h1 onclick="myAlert(this)" id="myTag">Dear Journal</h1>
+    <h2>Shhh...</h2>
+    <form onsubmit="submitHandler(event)">
+        <label for="">My day today:</label>
+        <textarea id="journalEntry" cols="30" rows="10" placeholder="My day was..."></textarea>
+        <input type="submit" id="journal-button" value="Add to Journal"/>
+    </form>
+
+    <div id="entries"></div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
